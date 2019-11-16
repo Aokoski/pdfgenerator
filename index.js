@@ -178,14 +178,16 @@ function generateHTML(answers, gitRes) {
   <div class="container">
     <h1 class="display-4">Hi! My name is ${answers.name}</h1>
     <p class="lead">I am from ${answers.location}.</p>
-    <h3>Example heading <span class="badge badge-secondary">Contact Me</span></h3>
+    <h3><span class="badge badge-secondary">Contact Me</span></h3>
     <ul class="list-group">
-      <li class="list-group-item">My GitHub username is ${answers.github}</li>
-      <li class="list-group-item">LinkedIn: ${answers.linkedin}</li>
-      <li class="list-group-item">Bio: ${gitRes.data.bio}</li>
-      <li class="list-group-item">Followers: ${gitRes.data.followers}</li>
-      <li class="list-group-item">Following: ${gitRes.data.following}</li>
-    </ul>
+    <li class="list-group-item">My GitHub username is ${answers.github}</li>
+    <li class="list-group-item">Bio: ${gitRes.data.bio}</li>
+    <li class="list-group-item">Img: ${gitRes.data.avatar_url}</li>
+    <li class="list-group-item">Followers: ${gitRes.data.followers}</li>
+    <li class="list-group-item">Following: ${gitRes.data.following}</li>
+    <li class="list-group-item">Profile: ${gitRes.data.html_url}</li>
+    <li class="list-group-item">Repos: ${gitRes.data.repos_url}</li>
+  </ul>
   </div>
 </div>
 </body>
